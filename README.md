@@ -18,6 +18,7 @@ Each item’s average colour is pre‑calculated and included in the mod, and a 
 
 Select the Train Stop Color Tool from the shortcut bar, then drag over any train stops you want to colour.  
 All selected stops will instantly update their colour to match the items referenced in their names.  
+![image](web-resources/factorio_2026-01-21_20-00-45.gif)  
 
 ## Mod Compatibility
 
@@ -28,4 +29,4 @@ All selected stops will instantly update their colour to match the items referen
 ## Feedback & Requests
 
 If you notice any wrong/missing colours toss a message in the discussions.  
-I don't plan to add other mods unless I am playing them but if you want to generate your own colours the script I used can be found [here](https://github.com/RiskyKen).
+I don't plan to add other mods unless I am playing them but if you want to generate your own colours the script I used can be found [here](https://github.com/RiskyKen/train-stop-item-color/tree/main/python).
