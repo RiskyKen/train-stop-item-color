@@ -16,5 +16,11 @@ data:extend({
     minimum_value = 0.5,
     maximum_value = 3.0,
     order = "b"
+  },
+  {
+    type = "bool-setting",
+    name = "train-stop-item-color-blend-item-colours",
+    setting_type = "runtime-global",
+    default_value = false
   }
 })

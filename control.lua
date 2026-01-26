@@ -76,7 +76,25 @@ local function color_train_stop(entity)
 
     if #items == 0 then return end
 
-    -- Blend colours
+    -- Read setting
+    local blend = settings.global["train-stop-item-color-blend-item-colours"].value
+
+    -- If NOT blending, use the first matching colour and exit early
+    if not blend then
+        local first = items[1]
+        local c = ITEM_COLORS[first]
+        if not c then return end
+
+        entity.color = {
+            r = c.r,
+            g = c.g,
+            b = c.b,
+            a = 1
+        }
+        return
+    end
+
+    -- Blend colours (default behaviour)
     local r, g, b = 0, 0, 0
     local count = 0
 
@@ -99,6 +117,7 @@ local function color_train_stop(entity)
         a = 1
     }
 end
+
 
 script.on_event(defines.events.on_player_selected_area, function(event)
     if event.item ~= "train-stop-color-tool" then return end
