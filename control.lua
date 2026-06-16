@@ -121,7 +121,7 @@ end
 
 script.on_event(defines.events.on_player_selected_area, function(event)
     if event.item ~= "train-stop-color-tool" then return end
-
+    -- Colour train stop when the colour tool is used.
     for _, entity in pairs(event.entities) do
         color_train_stop(entity)
     end
@@ -129,12 +129,16 @@ end)
 
 script.on_event(defines.events.on_player_alt_selected_area, function(event)
     if event.item ~= "train-stop-color-tool" then return end
-
+    -- Colour train stop when the colour tool is used (Alt mode).
     for _, entity in pairs(event.entities) do
         color_train_stop(entity)
     end
 end)
 
+
 script.on_event(defines.events.on_entity_renamed, function(event)
-    color_train_stop(event.entity)
+    if settings.global["train-stop-item-color-on-rename"].value then
+        color_train_stop(event.entity)
+    end
 end)
+

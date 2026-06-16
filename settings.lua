@@ -22,5 +22,12 @@ data:extend({
     name = "train-stop-item-color-blend-item-colours",
     setting_type = "runtime-global",
     default_value = false
+  },
+  {
+    type = "bool-setting",
+    name = "train-stop-item-color-on-rename",
+    setting_type = "runtime-global",
+    default_value = true
   }
 })
+
