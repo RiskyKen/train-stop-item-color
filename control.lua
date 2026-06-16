@@ -134,3 +134,7 @@ script.on_event(defines.events.on_player_alt_selected_area, function(event)
         color_train_stop(entity)
     end
 end)
+
+script.on_event(defines.events.on_entity_renamed, function(event)
+    color_train_stop(event.entity)
+end)
