@@ -1,6 +1,6 @@
 {
 	"name": "train-stop-item-color",
-	"version": "0.1.1",
+	"version": "1.0.0",
 	"title": "Train Stop Item Color",
 	"author": "RiskyKen",
 	"dependencies": [
@@ -9,5 +9,5 @@
     "? Krastorio2"
 	],
 	"description": "Automatically colors train stops based on [item=...] tags in their names.",
-	"factorio_version": "2.0"
+	"factorio_version": "2.1"
 }

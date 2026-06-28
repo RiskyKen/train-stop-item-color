@@ -1,6 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 28.06.2026
+  Changes:
+    - Updated for Factorio 2.1
+    - Bumped to 1.0
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
-Date: 27.01.2026
+Date: 16.06.2026
   Minor Features:
     - Added automatic colouring when a train stop is renamed (code by sakuro).
     - Added setting to toggle automatic colouring on rename.
